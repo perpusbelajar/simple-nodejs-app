@@ -29,8 +29,8 @@ jobs:
     
     - name: Tag the Docker image
       run: |
-        docker tag my-node-image:$(date +%s) myusername/my-node-image:latest
+        docker tag my-node-image:$(date +%s) perpusbelajar/my-node-image:latest
     
     - name: Push the Docker image
       run: |
-        docker push myusername/my-node-image:latest
+        docker push perpusbelajar/my-node-image:latest
