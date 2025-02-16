@@ -25,11 +25,11 @@ jobs:
     
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile --tag my-node-image:$(date +%s)
+        docker build . --file Dockerfile --tag my-node-image:latest
     
     - name: Tag the Docker image
       run: |
-        docker tag my-node-image:$(date +%s) perpusbelajar/my-node-image:latest
+        docker tag my-node-image:latest perpusbelajar/my-node-image:latest
     
     - name: Push the Docker image
       run: |
