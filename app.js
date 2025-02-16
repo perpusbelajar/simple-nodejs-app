@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 
 // Endpoint that triggers an error
 app.get('/error', (req, res) => {
-  console.error('Error: Something went wrong!');
+  console.error('Error: Something went wrong!!');
   res.status(500).send('An error occurred! Check the logs.');
 });
 
