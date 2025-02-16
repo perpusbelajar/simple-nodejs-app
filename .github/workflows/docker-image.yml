@@ -33,4 +33,4 @@ jobs:
     
     - name: Push the Docker image
       run: |
-        docker push perpusbelajar/my-node-image:latest
+        docker push perpusbelajar/my-node-image:${{ github.sha }}
